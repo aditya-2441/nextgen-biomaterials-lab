@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact - NGBL</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - NextGen Biomaterials Lab</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
 </head>
 <body>
-  <header class="navbar">
-    <img src="assets/images/logongbl.png" alt="NGBL Logo" class="logo" />
+  <header class="nav-container">
+    <div class="logo">
+      <img src="assets/images/logongbl.png" alt="NGBL Logo" />
+      <h1>NextGen Biomaterials Lab</h1>
+    </div>
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -17,43 +20,35 @@
         <li><a href="research.html">Research</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="page-header">
-    <h1>Contact Us</h1>
-  </section>
+  <section class="section">
+    <h2>Contact Us</h2>
+    <p>If you’re interested in collaborating, joining the lab, or just learning more — get in touch with us below.</p>
 
-  <section class="content">
-    <form class="contact-form" action="mailto:alok.kumar@uttaranchaluniversity.ac.in" method="post" enctype="text/plain">
-      <label for="name">Name:</label>
+    <form class="contact-form" action="mailto:ngbl.lab@university.edu" method="post" enctype="text/plain">
+      <label for="name">Your Name:</label>
       <input type="text" id="name" name="name" required />
 
-      <label for="email">Email:</label>
+      <label for="email">Your Email:</label>
       <input type="email" id="email" name="email" required />
 
       <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
-      <button type="submit">Send</button>
+      <button type="submit" class="btn">Send Message</button>
     </form>
 
-    <div class="contact-info">
-      <h3>Lab Location</h3>
-      <p>Uttaranchal Institute of Technology<br />Uttaranchal University, Dehradun, India</p>
-
-      <h3>Email</h3>
-      <p><a href="mailto:alok.kumar@uttaranchaluniversity.ac.in">alok.kumar@uttaranchaluniversity.ac.in</a></p>
+    <div class="lab-info" style="margin-top: 2rem;">
+      <p><strong>Email:</strong> ngbl.lab@university.edu</p>
+      <p><strong>Location:</strong> Department of Applied Sciences, Uttaranchal University, Dehradun</p>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 NextGen Biomaterials Lab</p>
-    <a href="https://www.linkedin.com/in/dr-alok-kumar-650925220/">Dr. Alok Kumar on LinkedIn</a>
+    <p>© 2025 NextGen Biomaterials Lab. All rights reserved.</p>
   </footer>
-
-  <script src="main.js"></script>
 </body>
 </html>

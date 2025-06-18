@@ -4,58 +4,68 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NextGen Biomaterials Lab</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
 </head>
 <body>
-  <header class="navbar">
-    <img src="assets/images/logongbl.png" alt="NGBL Logo" class="logo" />
+  <header class="nav-container">
+    <div class="logo">
+      <img src="assets/images/logongbl.png" alt="NGBL Logo" />
+      <h1>NextGen Biomaterials Lab</h1>
+    </div>
     <nav>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="hero">
-    <div class="hero-text">
-      <h1>Pioneering Biodegradable Biomaterials</h1>
-      <p>Shaping the future of orthopedic innovation through sustainable engineering research.</p>
+    <div class="hero-content">
+      <h2>Innovating the Future of Biomaterials</h2>
+      <p>Cutting-edge research in biopolymers, tissue scaffolds, and nanomaterials.</p>
+      <a href="#about" class="btn">Learn More</a>
     </div>
   </section>
 
-  <section class="intro">
-    <h2>Welcome to NGBL</h2>
+  <section id="about" class="section">
+    <h2>About Us</h2>
     <p>
-      Led by Dr. Alok Kumar, the NextGen Biomaterials Lab is dedicated to the research and development of biodegradable bone implants and mechanical innovations in the biomedical sector.
+      NextGen Biomaterials Lab is a research-focused initiative led by
+      our visionary professor, aiming to transform healthcare and
+      sustainability through material science innovations.
     </p>
   </section>
 
-  <section class="highlights">
-    <div class="card">
-      <h3>Advanced Magnesium Alloys</h3>
-      <p>Exploring structural and biodegradable properties of porous Mg-based materials for bone regeneration.</p>
-    </div>
-    <div class="card">
-      <h3>Collaborative Research</h3>
-      <p>In partnership with premier institutes and labs across India for interdisciplinary innovation.</p>
-    </div>
-    <div class="card">
-      <h3>4+ Years of Impact</h3>
-      <p>Translating mechanical research into real-world biomedical solutions through rigorous experimentation.</p>
+  <section id="research" class="section">
+    <h2>Research Areas</h2>
+    <div class="cards">
+      <div class="card">Biopolymers</div>
+      <div class="card">Tissue Engineering</div>
+      <div class="card">Nano Composites</div>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 NextGen Biomaterials Lab</p>
-    <a href="https://www.linkedin.com/in/dr-alok-kumar-650925220/">Dr. Alok Kumar on LinkedIn</a>
-  </footer>
+  <section id="team" class="section">
+    <h2>Our Team</h2>
+    <p>Coming Soon: Meet the minds behind the research.</p>
+  </section>
 
-  <script src="main.js"></script>
+  <section id="contact" class="section contact-section">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NextGen Biomaterials Lab. All rights reserved.</p>
+  </footer>
 </body>
 </html>
