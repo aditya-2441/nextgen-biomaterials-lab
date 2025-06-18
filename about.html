@@ -1,19 +1,19 @@
-<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About - NGBL</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="navbar">
-    <a href="index.html"><img src="assets/images/logongbl.png" alt="NGBL Logo" class="logo" /></a>
+    <img src="assets/images/logongbl.png" alt="NGBL Logo" class="logo" />
     <nav>
-      <ul>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="team.html">Team</a></li>
@@ -22,21 +22,32 @@
     </nav>
   </header>
 
-  <main class="container">
+  <section class="page-header">
+    <h1>About the Lab</h1>
+  </section>
+
+  <section class="content">
+    <h2>Who We Are</h2>
+    <p>
+      The NextGen Biomaterials Lab, under the leadership of Dr. Alok Kumar, is focused on advancing the field of biodegradable bone implants. We integrate mechanical engineering with biomedical innovation to create sustainable and high-impact solutions for the healthcare industry.
+    </p>
+
     <h2>About Dr. Alok Kumar</h2>
-    <div class="profile">
-      <img src="WhatsApp Image 2025-06-16 at 08.59.05.jpeg" alt="Dr. Alok Kumar" class="profile-img" />
-      <div>
-        <p><strong>Pronouns:</strong> He/Him</p>
-        <p><strong>Specializations:</strong> Biomaterials, In-Vivo & In-Vitro Testing, Additive Manufacturing, Medical Devices & Implants</p>
-        <p>Dr. Alok Kumar is a dynamic Mechanical Engineer with a Ph.D. focused on biodegradable bone implants. With advanced degrees from institutions like MNNIT Allahabad and over 4 years of research experience, his work bridges sustainable innovation and biomedical engineering. His research emphasizes eco-friendly, cutting-edge solutions in medical device development.</p>
-        <p><a href="https://www.linkedin.com/in/dr-alok-kumar-650925220/" target="_blank">🔗 LinkedIn Profile</a></p>
-      </div>
-    </div>
-  </main>
+    <p>
+      Dr. Alok Kumar is a dynamic Mechanical Engineer with a Ph.D. in Mechanical Engineering, specializing in Biodegradable Bone Implants. A graduate of MNNIT Allahabad, he brings 4-5 years of industry and academic experience. His work stands at the intersection of engineering, sustainability, and innovation.
+    </p>
+
+    <h2>Mission</h2>
+    <p>
+      To lead pioneering research in biodegradable materials and transform orthopedic care with innovative, eco-friendly engineering solutions.
+    </p>
+  </section>
 
   <footer>
     <p>&copy; 2025 NextGen Biomaterials Lab</p>
+    <a href="https://www.linkedin.com/in/dr-alok-kumar-650925220/">Dr. Alok Kumar on LinkedIn</a>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>

@@ -1,30 +1,33 @@
-<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact - NGBL</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="navbar">
-    <a href="index.html"><img src="assets/images/logongbl.png" alt="NGBL Logo" class="logo" /></a>
+    <img src="assets/images/logongbl.png" alt="NGBL Logo" class="logo" />
     <nav>
-      <ul>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="container">
-    <h2>Contact Us</h2>
-    <form id="contactForm">
+  <section class="page-header">
+    <h1>Contact Us</h1>
+  </section>
+
+  <section class="content">
+    <form class="contact-form" action="mailto:alok.kumar@uttaranchaluniversity.ac.in" method="post" enctype="text/plain">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required />
 
@@ -32,14 +35,23 @@
       <input type="email" id="email" name="email" required />
 
       <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
+      <textarea id="message" name="message" rows="6" required></textarea>
 
-      <button type="submit" class="btn">Send Message</button>
+      <button type="submit">Send</button>
     </form>
-  </main>
+
+    <div class="contact-info">
+      <h3>Lab Location</h3>
+      <p>Uttaranchal Institute of Technology<br />Uttaranchal University, Dehradun, India</p>
+
+      <h3>Email</h3>
+      <p><a href="mailto:alok.kumar@uttaranchaluniversity.ac.in">alok.kumar@uttaranchaluniversity.ac.in</a></p>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 NextGen Biomaterials Lab</p>
+    <a href="https://www.linkedin.com/in/dr-alok-kumar-650925220/">Dr. Alok Kumar on LinkedIn</a>
   </footer>
 
   <script src="main.js"></script>

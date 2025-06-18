@@ -4,33 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Team - NGBL</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="navbar">
-    <a href="index.html"><img src="assets/images/logongbl.png" alt="NGBL Logo" class="logo" /></a>
+    <img src="assets/images/logongbl.png" alt="NGBL Logo" class="logo" />
     <nav>
-      <ul>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="publications.html">Publications</a></li>
-        <li><a href="team.html" class="active">Team</a></li>
+        <li><a href="team.html">Team</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <main class="container">
-    <h2>Meet the Team</h2>
-    <div class="team-member">
-      <img src="assets/images/WhatsApp Image 2025-06-16 at 08.59.05.jpeg" alt="Dr. Alok Kumar" class="profile-img" />
+
+  <section class="page-header">
+    <h1>Meet the Team</h1>
+  </section>
+
+  <section class="content team-grid">
+    <div class="team-card">
+      <img src="assets/images/dr-alok.jpg" alt="Dr. Alok Kumar" />
       <h3>Dr. Alok Kumar</h3>
-      <p>Founder & Lead Researcher</p>
+      <p>Principal Investigator</p>
+      <p>Ph.D. in Mechanical Engineering | Specialist in Biodegradable Bone Implants</p>
     </div>
-    <p>Additional team members and collaborators will be listed soon.</p>
-  </main>
+
+    <div class="team-card">
+      <img src="assets/images/default-avatar.png" alt="Team Member" />
+      <h3>Research Associates</h3>
+      <p>Graduate researchers contributing to scaffold modeling, corrosion studies, and biomaterial simulations.</p>
+    </div>
+
+    <div class="team-card">
+      <img src="assets/images/default-avatar.png" alt="Team Member" />
+      <h3>Student Interns</h3>
+      <p>Undergraduate innovators working hands-on in the lab to gain real-world research exposure.</p>
+    </div>
+  </section>
+
   <footer>
     <p>&copy; 2025 NextGen Biomaterials Lab</p>
+    <a href="https://www.linkedin.com/in/dr-alok-kumar-650925220/">Dr. Alok Kumar on LinkedIn</a>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
