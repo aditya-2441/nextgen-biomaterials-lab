@@ -34,7 +34,7 @@ body {
 }
 
 .logo img {
-  height: 40px;
+  height: 70px;
   width: auto;
 }
 
@@ -166,6 +166,37 @@ body {
 
 .contact-section button:hover {
   background-color: #0073e6;
+}
+.publications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.pub-card {
+  background: #f8fbff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 81, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pub-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 81, 255, 0.2);
+}
+
+.pub-card h3 {
+  font-size: 1.1rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.pub-card p {
+  font-size: 0.9rem;
+  color: #333;
+  margin: 0.3rem 0;
 }
 
 /* FOOTER */
