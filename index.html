@@ -5,67 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NextGen Biomaterials Lab</title>
   <link rel="stylesheet" href="css/style.css" />
-  <script defer src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-  <header class="nav-container">
-    <div class="logo">
-      <img src="assets/images/logongbl.png" alt="NGBL Logo" />
-      <h1>NextGen Biomaterials Lab</h1>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <img src="assets/images/logongbl.png" alt="NGBL Logo" class="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Innovating the Future of Biomaterials</h2>
-      <p>Cutting-edge research in biopolymers, tissue scaffolds, and nanomaterials.</p>
-      <a href="#about" class="btn">Learn More</a>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>NextGen Biomaterials Lab</h1>
+      <p>Innovating the future of materials, today.</p>
     </div>
   </section>
 
-  <section id="about" class="section">
-    <h2>About Us</h2>
-    <p>
-      NextGen Biomaterials Lab is a research-focused initiative led by
-      our visionary professor, aiming to transform healthcare and
-      sustainability through material science innovations.
-    </p>
-  </section>
-
+  <!-- Research Section -->
   <section id="research" class="section">
-    <h2>Research Areas</h2>
-    <div class="cards">
-      <div class="card">Biopolymers</div>
-      <div class="card">Tissue Engineering</div>
-      <div class="card">Nano Composites</div>
+    <div class="container">
+      <h2>Our Research</h2>
+      <p>We focus on cutting-edge biomaterials, biodegradable polymers, and smart nanostructures.</p>
     </div>
   </section>
 
+  <!-- Publications Section -->
+  <section id="publications" class="section">
+    <div class="container">
+      <h2>Publications</h2>
+      <ul class="publication-list">
+        <li>
+          <strong>Doe, J. et al.</strong> (2024). "Biodegradable Scaffold for Tissue Engineering." <em>Journal of Biomaterials Research</em>.
+        </li>
+        <li>
+          <strong>Singh, A. & Aashii, R.</strong> (2023). "Nano-Fiber Innovations in Drug Delivery." <em>International Journal of Bioengineering</em>.
+        </li>
+        <li>
+          <strong>NextGen Lab Team.</strong> (2022). "Smart Polymers in Biomedical Applications." <em>Advanced Materials Science</em>.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Team Section -->
   <section id="team" class="section">
-    <h2>Our Team</h2>
-    <p>Coming Soon: Meet the minds behind the research.</p>
+    <div class="container">
+      <h2>Our Team</h2>
+      <p>Led by Professor X, our team consists of dedicated researchers, scholars, and visionaries.</p>
+    </div>
   </section>
 
-  <section id="contact" class="section contact-section">
-    <h2>Contact</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About the Lab</h2>
+      <p>The NextGen Biomaterials Lab (NGBL) is committed to developing innovative materials that support sustainable and advanced biomedical applications.</p>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 NextGen Biomaterials Lab. All rights reserved.</p>
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 NextGen Biomaterials Lab. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
