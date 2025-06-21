@@ -1,54 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us - NextGen Biomaterials Lab</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script defer src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – NextGen Biomaterials Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-  <header class="nav-container">
-    <div class="logo">
-      <img src="assets/images/logo.PNG" alt="NGBL Logo" />
-      <h1>NextGen Biomaterials Lab</h1>
+  <header class="navbar">
+    <div class="container">
+      <img src="assets/images/logo.PNG" alt="NGBL Logo" class="logo">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="team.html">Team</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <section class="section">
-    <h2>Contact Us</h2>
-    <p>If you’re interested in collaborating, joining the lab, or just learning more — get in touch with us below.</p>
-
-    <form class="contact-form" action="mailto:ngbl.lab@university.edu" method="post" enctype="text/plain">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Your Email:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-
-    <div class="lab-info" style="margin-top: 2rem;">
-      <p><strong>Email:</strong> ngbl.lab@university.edu</p>
-      <p><strong>Location:</strong> Department of Applied Sciences, Uttaranchal University, Dehradun</p>
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Interested in collaboration or have questions about our research? We'd love to hear from you.</p>
+      <form class="contact-form" action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p><strong>Email:</strong> alokkumar@nextgenlab.edu.in</p>
+        <p><strong>Address:</strong> Uttaranchal University, Dehradun, India</p>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 NextGen Biomaterials Lab. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 NextGen Biomaterials Lab. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
