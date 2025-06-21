@@ -3,45 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Team - NextGen Biomaterials Lab</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="js/main.js" defer></script>
+  <title>Team | NextGen Biomaterials Lab</title>
+  <link rel="stylesheet" href="assets/styles/style.css" />
 </head>
 <body>
   <header class="navbar">
     <div class="container">
-      <img src="assets/images/logo.PNG" alt="NGBL Logo" class="logo"/>
-      <nav>
-       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="team.html" class="active">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-       </ul>
+      <img src="assets/images/logo.PNG" alt="NGBL Logo" class="logo">
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <nav id="navMenu">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="team.html" class="active">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <section class="team">
-    <div class="container">
-      <h2>Meet Our Team</h2>
+  <main>
+    <section class="hero">
+      <h1>Our Team</h1>
+      <p>Led by Dr. Alok Kumar and supported by a team of aspiring scientists and engineers</p>
+    </section>
+
+    <section class="team-container">
       <div class="team-member">
-        <img src="assets/images/WhatsApp Image 2025-06-16 at 08.59.05.jpeg" alt="Dr. Alok Kumar" class="profile-img">
-        <div class="member-info">
-          <h3>Dr. Alok Kumar</h3>
-          <p><em>Lead</em></p>
-          <p>Dr. Kumar leads advanced biomaterials research focused on regenerative medicine, and biomedical engineering. He oversees experimental & computational projects, drives innovation, and mentors our team.</p>
-        </div>
+        <img src="assets/images/whatsapp-profile.jpg" alt="Dr. Alok Kumar">
+        <h2>Dr. Alok Kumar</h2>
+        <p>Principal Investigator & Professor</p>
+        <p>Expert in biomaterials, nanotechnology, and tissue engineering. Over 15 years of experience in cutting-edge research and innovation.</p>
       </div>
-      <!placeholder for additional team members -->
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
-    <div class="containers">
-      <p>&copy; 2025 NextGen Biomaterials Lab. All rights reserved.</p>
-    </div>
+    <p>&copy; 2025 NextGen Biomaterials Lab. All rights reserved.</p>
   </footer>
+
+  <script src="assets/scripts/main.js"></script>
 </body>
 </html>
