@@ -1,53 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Contact – NextGen Biomaterials Lab</title>
-   <link rel="stylesheet" href="css/style.css">
-   <script src="js/main.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | NextGen Biomaterials Lab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
 </head>
-
-<body>
-
-  <header class="navbar">
-    <div class="container">
-      <img src="assets/images/logo.PNG" alt="NGBL Logo" class="logo">
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+<body class="bg-white text-gray-900 font-sans">
+  <header class="bg-white border-b shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <div class="flex items-center gap-4">
+        <img src="assets/images/logo.PNG" alt="NGBL Logo" class="h-10 w-auto" />
+        <h1 class="text-xl font-bold tracking-wide">NextGen Biomaterials Lab</h1>
+      </div>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6 text-sm font-medium">
+          <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+          <li><a href="research.html" class="hover:text-blue-600">Research</a></li>
+          <li><a href="team.html" class="hover:text-blue-600">Team</a></li>
+          <li><a href="publications.html" class="hover:text-blue-600">Publications</a></li>
+          <li><a href="biosketch.html" class="hover:text-blue-600">Bio-sketch</a></li>
+          <li><a href="contact.html" class="text-blue-600 font-semibold">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-<section class="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Interested in collaboration or have questions about our research? We'd love to hear from you.</p>
-      <form class="contact-form" action="#" method="post">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <div class="contact-info">
-        <p><strong>Email:</strong> alokkumar@nextgenlab.edu.in</p>
-        <p><strong>Address:</strong> Uttaranchal University, Dehradun, India</p>
-      </div> 
-    </div>
-</section>
+  <main class="max-w-5xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center mb-10">Get in Touch</h2>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 NextGen Biomaterials Lab. All rights reserved.</p>
+    <div class="grid md:grid-cols-2 gap-12">
+      <!-- Contact Info -->
+      <div data-aos="fade-right">
+        <h3 class="text-xl font-semibold mb-4">Lab Address</h3>
+        <p>NextGen Biomaterials Lab<br />Uttaranchal University<br />Uttarakhand, India</p>
+
+        <h3 class="text-xl font-semibold mt-6 mb-4">Contact</h3>
+        <p>Email: <a href="mailto:ngbl@university.edu" class="text-blue-600">ngbl@university.edu</a></p>
+        <p>Phone: +91-12345-67890</p>
+      </div>
+
+      <!-- Contact Form -->
+      <div data-aos="fade-left">
+        <form class="space-y-4">
+          <div>
+            <label for="name" class="block font-medium">Name</label>
+            <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded" />
+          </div>
+          <div>
+            <label for="email" class="block font-medium">Email</label>
+            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded" />
+          </div>
+          <div>
+            <label for="message" class="block font-medium">Message</label>
+            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border rounded"></textarea>
+          </div>
+          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send Message</button>
+        </form>
+      </div>
     </div>
+
+    <!-- Map -->
+    <div class="mt-16" data-aos="zoom-in">
+      <iframe class="w-full h-64 rounded shadow" frameborder="0" style="border:0" allowfullscreen loading="lazy"
+        src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Uttaranchal+University">
+      </iframe>
+    </div>
+  </main>
+
+  <footer class="bg-gray-100 border-t py-6 text-center text-sm text-gray-600">
+    <p>&copy; 2025 NextGen Biomaterials Lab. All rights reserved.</p>
   </footer>
-  
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

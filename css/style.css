@@ -1,102 +1,48 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* style.css — Optional Custom Styles with Tailwind Setup */
 
+/* Apply global font smoothing and base styles */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #ffffff;
-  color: #1a1a1a;
-  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.container{
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-navbar{
-  background-color: #f0f4ff;
-  padding: 1rem 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  position: sticky;
-  top:0;
-  width: 100%;
-  z-index: 1000;
-  transition: box-shadow 0.3s, padding 0.3s;
-}
-.navbar.scrolled {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 0.6rem 0;
-}
-.navbar .container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
- .logo{
-  height: 50px;
-  width:auto;
- }
- .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
- }
- .nav-links li a {
-  text-decoration: none;
-  color: #1a1a1a;
-  font-weight: 500;
-  padding: 6px 10px;
-  transition: background 0.3s, color 0.3s;
- }
 
- .nav-links li a:hover,
- .nav-links li a.active {
-  color: #0057d8;
-  background-color: #e2eaff;
-  border-radius: 6px;
- }
+/* Example: Override Tailwind with custom header color */
+header.site-header {
+  background-color: white;
+}
 
- .hero{
-  background: linear-gradient(to right, #dbe9ff, #f5f9ff);
-  padding: 6rem 0;
-  text-align: center;
+/* Custom button shadow or glow effect */
+.btn-glow {
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.btn-glow:hover {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.9);
+}
+
+/* Hide scrollbar but keep scrolling functionality */
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scroll-hidden {
+  -ms-overflow-style: none;  /* IE 10+ */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Optional: Animate fade-in if you prefer custom CSS over AOS */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
- .hero h1{
-  font-size: 3rem;
-  color: #003366;
-  margin-bottom: 1rem;
+}
+
+/* Responsive helpers */
+@media screen and (max-width: 768px) {
+  .logo img {
+    height: 32px;
   }
- .hero p{
-  font-size: 1.2rem;
-  color: #444;
- }
- .back-to-top{
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  padding: 10px 14px;
-  background-color: #0057d8;
-  color: white;
-  font-size: 1.2rem;
-  border: none;
-  border-radius:50%;
-  box-shadow: 0 4px 12px rgba(0,0,0,0,15);
-  cursor: pointer;
-   display: none;
-  z-index: 999;
-  transition: background 0.3s;
- }
- .back-to-top:hover{
-  background-color: #0041aa;
- }
- footer{
-  background-color: #f9f9f9;
-  text-align:center;
-  padding: 2rem 0;
-  margin-top: 3rem;
-  font-size: 0.9rem;
-  color: #666;
- }
+}

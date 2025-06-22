@@ -1,34 +1,45 @@
-document.addEventListener("DOMContentLoaded", ( ) => {
-  const navlinks = document.querySelectorAll(".nav-links a");
-  const currentPage = window.location.pathname.split("/").pop();
-  navlinks.forEach(link => {
-    if(link.getAttribute("href") === currentPage) {
-      link.classList.add("active");
-    }
+// main.js
+
+// Toggle mobile menu
+const navToggle = document.querySelector("#nav-toggle");
+const navMenu = document.querySelector("#nav-menu");
+
+if (navToggle && navMenu) {
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("hidden");
   });
-  const navbar = document.querySelector(".navbar");
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 20) {
-      navbar.classList>removeEventListener("scrolled");
-    }
-  });
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute("href")).scrollIntoView({
-        behavior: "smooth"
+}
+
+// Tabbed content logic for publications
+const tabLinks = document.querySelectorAll("[data-tab-target]");
+const tabContents = document.querySelectorAll("[data-tab-content]");
+
+if (tabLinks.length > 0 && tabContents.length > 0) {
+  tabLinks.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = document.querySelector(tab.dataset.tabTarget);
+
+      tabContents.forEach((content) => {
+        content.classList.add("hidden");
       });
+
+      tabLinks.forEach((link) => {
+        link.classList.remove("border-blue-500", "text-blue-600", "font-semibold");
+      });
+
+      tab.classList.add("border-blue-500", "text-blue-600", "font-semibold");
+      target.classList.remove("hidden");
     });
   });
-  const topBtn = document.createElement("button");
-  topBtn.innerText = "↑";
-  topBtn.className = "back-to-top";
-  document.body.appendChild(topBtn);
-  
-  window.addEventListener("scroll", ( ) => {
-    topBtn.style.display = window.scrollY >300 ? "block" : "none";
-  });
-  topBtn.addEventListener("click", ( ) => {
-    window.scrollTo({ top: 0, behaviour: "smooth" });
-  });
-  });
+}
+
+// Scroll animations via AOS (initialize if AOS is present)
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.AOS) {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }
+});

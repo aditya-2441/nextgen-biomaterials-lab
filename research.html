@@ -1,50 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Research - NextGen Biomaterials Lab</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="js/main.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | NextGen Biomaterials Lab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script defer src="js/main.js"></script>
 </head>
-
-<body>
-
-  <header class="navbar">
-    <div class="container">
-      <img src="assets/images/logo.PNG" alt="NGBL Logo" class="logo">
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="research.html" class="active">Research</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="contact.html">Contact</a></li>
+<body class="bg-white text-gray-900 font-sans">
+  <header class="bg-white border-b shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <div class="flex items-center gap-4">
+        <img src="assets/images/logo.PNG" alt="NGBL Logo" class="h-10 w-auto" />
+        <h1 class="text-xl font-bold tracking-wide">NextGen Biomaterials Lab</h1>
+      </div>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6 text-sm font-medium">
+          <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+          <li><a href="research.html" class="text-blue-600 font-semibold">Research</a></li>
+          <li><a href="team.html" class="hover:text-blue-600">Team</a></li>
+          <li><a href="publications.html" class="hover:text-blue-600">Publications</a></li>
+          <li><a href="biosketch.html" class="hover:text-blue-600">Bio-sketch</a></li>
+          <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="research">
-    <div class="container">
-      <h2>Our Research</h2>
-      <p>At the NextGen Biomaterials Lab, our research is focused on the development of innovative materials that have the potential to revolutionize the medical and engineering fields. We are currently exploring:</p>
-      <ul>
-        <li><strong>Smart Biomaterials</strong> - materials that can adapt and respond to their environment.</li>
-        <li><strong>Regenerative Medicine</strong> - scaffolds and hydrogels to aid tissue regeneration.</li>
-        <li><strong>Biocompatible Composites</strong> - combinig sysnthetic and natural polymers for safe and effective use.</li>
-        <li><strong>3D Printing for Biomedical Applications</strong> - creating complex structures for implants and tissue engineering.</li>
-      </ul>
-      <p>We combine experimental work with computational mofeling to gain deeper insight and drive innovation in material science.</p>
-    </div>
-  </section>
+  <main class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Research Focus</h2>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 NextGen Biomaterials Lab. All right reserved.</p>
+    <!-- Tab Buttons -->
+    <div class="flex justify-center mb-10">
+      <button class="tab-btn px-5 py-2 mx-2 bg-blue-600 text-white rounded-full" onclick="openTab('projects')">Projects</button>
+      <button class="tab-btn px-5 py-2 mx-2 bg-gray-200 text-gray-800 rounded-full" onclick="openTab('collaborations')">Collaborations</button>
+      <button class="tab-btn px-5 py-2 mx-2 bg-gray-200 text-gray-800 rounded-full" onclick="openTab('patents')">Patents</button>
     </div>
+
+    <!-- Tab Content -->
+    <div id="projects" class="tab-content" data-aos="fade-up">
+      <h3 class="text-2xl font-semibold mb-4">Ongoing Projects</h3>
+      <ul class="list-disc ml-6 space-y-2 text-gray-700">
+        <li>Development of biodegradable polymer composites for wound healing.</li>
+        <li>Smart hydrogel systems for targeted drug delivery.</li>
+        <li>3D printed scaffolds for tissue engineering applications.</li>
+      </ul>
+    </div>
+
+    <div id="collaborations" class="tab-content hidden" data-aos="fade-up">
+      <h3 class="text-2xl font-semibold mb-4">Collaborative Initiatives</h3>
+      <ul class="list-disc ml-6 space-y-2 text-gray-700">
+        <li>Joint project with IIT Roorkee on nano-biomaterials.</li>
+        <li>Industry partnership with BioMedix Labs for clinical trials.</li>
+        <li>Global research exchange with MIT Biomaterials Group.</li>
+      </ul>
+    </div>
+
+    <div id="patents" class="tab-content hidden" data-aos="fade-up">
+      <h3 class="text-2xl font-semibold mb-4">Patents and Innovation</h3>
+      <ul class="list-disc ml-6 space-y-2 text-gray-700">
+        <li>Smart patch for glucose monitoring – Patent filed 2024.</li>
+        <li>Self-healing bio-polymer blend – Patent granted 2023.</li>
+        <li>Micro-needle drug release platform – Patent pending.</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="bg-gray-100 border-t py-6 text-center text-sm text-gray-600">
+    <p>&copy; 2025 NextGen Biomaterials Lab. All rights reserved.</p>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function openTab(tabId) {
+      const tabs = document.querySelectorAll('.tab-content');
+      const buttons = document.querySelectorAll('.tab-btn');
+      tabs.forEach(tab => tab.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-blue-600', 'text-white');
+        btn.classList.add('bg-gray-200', 'text-gray-800');
+      });
+      event.target.classList.remove('bg-gray-200', 'text-gray-800');
+      event.target.classList.add('bg-blue-600', 'text-white');
+    }
+  </script>
 </body>
 </html>

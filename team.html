@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Team - NextGen Biomaterials Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team | NextGen Biomaterials Lab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <script src="js/main.js" defer></script>
+  <script defer src="js/main.js"></script>
 </head>
-
-<body>
-
-  <header class="navbar">
-    <div class="container">
-      <img src="assets/images/logo.PNG" alt="NGBL Logo" class="logo"/>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="team.html" class="active">Team</a></li>
-          <li><a href="contact.html">Contact</a></li>
+<body class="bg-white text-gray-900 font-sans">
+  <header class="bg-white border-b shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <div class="flex items-center gap-4">
+        <img src="assets/images/logo.PNG" alt="NGBL Logo" class="h-10 w-auto" />
+        <h1 class="text-xl font-bold tracking-wide">NextGen Biomaterials Lab</h1>
+      </div>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6 text-sm font-medium">
+          <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+          <li><a href="research.html" class="hover:text-blue-600">Research</a></li>
+          <li><a href="team.html" class="text-blue-600 font-semibold">Team</a></li>
+          <li><a href="publications.html" class="hover:text-blue-600">Publications</a></li>
+          <li><a href="biosketch.html" class="hover:text-blue-600">Bio-sketch</a></li>
+          <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="team">
-    <div class="container">
-      <h2>Meet Our Team</h2>
-      <div class="team-member">
-        <img src="assets/images/WhatsApp Image 2025-06-16 at 08.59.05.jpeg" alt="Dr. Alok Kumar" class="profile-img">
-        <div class="member-info">
-          <h3>Dr. Alok Kumar</h3>
-          <p><em>Lead</em></p>
-          <p>Dr. Kumar leads advanced biomaterials research focused on regenerative medicine, and biomedical engineering. He oversees experimental & computational projects, drives innovation, and mentors our team.</p>
-        </div>
-      </div>
-      <!placeholder for additional team members -->
-    </div>
-  </section>
+  <main class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
 
-  <footer>
-    <div class="containers">
-      <p>&copy; 2025 NextGen Biomaterials Lab. All rights reserved.</p>
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3" data-aos="fade-up">
+      <!-- Team Member Card -->
+      <div class="bg-white shadow-lg rounded-xl p-6 text-center hover:shadow-2xl transition">
+        <img src="assets/images/WhatsApp Image 2025-06-16 at 08.59.05.jpeg" alt="Team Member" class="w-32 h-32 mx-auto rounded-full object-cover mb-4" />
+        <h3 class="text-xl font-semibold">Dr. A. Sharma</h3>
+        <p class="text-sm text-gray-600 mb-2">Principal Investigator</p>
+        <a href="#" class="text-blue-600 hover:underline text-sm">LinkedIn Profile</a>
+      </div>
+
+      <!-- Placeholder Members -->
+      <div class="bg-white shadow-lg rounded-xl p-6 text-center hover:shadow-2xl transition">
+        <img src="https://via.placeholder.com/128" alt="Team Member" class="w-32 h-32 mx-auto rounded-full object-cover mb-4" />
+        <h3 class="text-xl font-semibold">Anjali Verma</h3>
+        <p class="text-sm text-gray-600 mb-2">Research Associate</p>
+        <a href="#" class="text-blue-600 hover:underline text-sm">LinkedIn Profile</a>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-xl p-6 text-center hover:shadow-2xl transition">
+        <img src="https://via.placeholder.com/128" alt="Team Member" class="w-32 h-32 mx-auto rounded-full object-cover mb-4" />
+        <h3 class="text-xl font-semibold">Rohit Mehta</h3>
+        <p class="text-sm text-gray-600 mb-2">PhD Candidate</p>
+        <a href="#" class="text-blue-600 hover:underline text-sm">LinkedIn Profile</a>
+      </div>
+
+      <!-- Add more team members below as needed -->
     </div>
-  </footer>
-  
-</body>
-</html>
+  </main>
+
+  <footer class="bg-gray-100 border-t py-6

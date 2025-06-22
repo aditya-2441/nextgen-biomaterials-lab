@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bio-sketch | NextGen Biomaterials Lab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <header class="bg-white border-b shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <div class="flex items-center gap-4">
+        <img src="assets/images/logo.PNG" alt="NGBL Logo" class="h-10 w-auto" />
+        <h1 class="text-xl font-bold tracking-wide">NextGen Biomaterials Lab</h1>
+      </div>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6 text-sm font-medium">
+          <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+          <li><a href="research.html" class="hover:text-blue-600">Research</a></li>
+          <li><a href="team.html" class="hover:text-blue-600">Team</a></li>
+          <li><a href="publications.html" class="hover:text-blue-600">Publications</a></li>
+          <li><a href="biosketch.html" class="text-blue-600 font-semibold">Bio-sketch</a></li>
+          <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center mb-10">Bio-sketch</h2>
+
+    <div class="grid md:grid-cols-3 gap-8 items-start">
+      <!-- Profile Image -->
+      <div class="md:col-span-1" data-aos="fade-up">
+        <img src="assets/images/professor.jpg" alt="Professor" class="rounded shadow-lg w-full" />
+      </div>
+
+      <!-- Bio Content -->
+      <div class="md:col-span-2 space-y-6" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-2xl font-semibold">Dr. [Professor's Full Name]</h3>
+        <p class="text-gray-700">
+          Dr. [Name] is the Principal Investigator at the NextGen Biomaterials Lab, leading research in advanced materials
+          for regenerative medicine, tissue engineering, and drug delivery. With over 10 years of academic and industrial experience,
+          Dr. [Name] has published in top-tier journals and collaborated with multiple national and international research bodies.
+        </p>
+
+        <h4 class="text-xl font-semibold">Research Interests</h4>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Biodegradable polymers</li>
+          <li>Scaffold design for tissue regeneration</li>
+          <li>Smart drug delivery systems</li>
+          <li>Bio-inspired materials</li>
+        </ul>
+
+        <h4 class="text-xl font-semibold">Education & Awards</h4>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Ph.D. in Biomaterials – [University Name]</li>
+          <li>M.Tech in Biomedical Engineering – [Institute Name]</li>
+          <li>Recipient of [XYZ] Fellowship for Excellence in Research</li>
+        </ul>
+
+        <a href="assets/docs/CV.pdf" class="inline-block mt-4 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700" download>
+          Download Full CV
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-100 border-t py-6 text-center text-sm text-gray-600">
+    <p>&copy; 2025 NextGen Biomaterials Lab. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
